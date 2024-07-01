@@ -1,0 +1,293 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2; /* Fundo cinza claro */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F2F1EB; /* Branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #EEE7DA; /* Cor do cabeçalho */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+    size: 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000000; /* Verde escuro */
+}
+
+.modo-noturno {
+    display: flex;
+    align-items: center;
+}
+
+.modo-noturno .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc; /* Cinza claro */
+    margin-right: 10px;
+}
+
+.section-row { /* Nova classe para agrupar as seções */
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme entre os quadrados */
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #D8EFD3; /* Cinza claro */ /* Cor do timer */
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000; /* Verde escuro */
+}
+
+/* Estilos para os quadros da To-do List e Lembretes */
+.to-do-list-quadro, .lembretes-quadro, .timer {
+    width: 100%; /* Ocultar o scroll horizontal */
+    box-sizing: border-box; 
+}
+
+.to-do-list-quadro {
+    margin-bottom: 20px;
+}
+
+.to-do-list-items ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.to-do-list-items li {
+    margin-bottom: 5px;
+    color: #000000; /* Preto */
+}
+
+.lembretes .anote-lembretes {
+    font-size: 14px;
+    color: #777; /* Cinza escuro */
+}
+
+/* Aplicando a mesma largura para todos os quadros */
+.quadro {
+    width: 300px; /* Largura do timer */
+    box-sizing: border-box; /* Inclui padding e bordas na largura */
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.to-do-list-quadro, .lembretes-quadro, .timer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.timer {
+    background-color: #D8EFD3; /* Cinza claro */ /* Cor do timer */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.timer .time {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000; /* Verde escuro */
+}
+
+.timer button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #228B22; /* Verde escuro */
+    color: #FFFFFF; /* Branco */
+}
+
+.timer .pause {
+    background-color: #132fcf; /* Cinza claro */
+    display: none; 
+}
+
+.timer .reset {
+    background-color: #f00; /* Vermelho */
+    color: #fff; /* Branco */
+    display: none; 
+}
+
+.happy-day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.happy-day-items, .calendario { /* Definindo a largura dos novos quadrados */
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espaçamento entre os quadrados */
+}
+
+.happy-day-items .adicionar-coisas {
+    font-size: 14px;
+    color: #777; /* Cinza escuro */
+}
+
+.notas {
+    margin-top: 20px;
+    background-color: #D8EFD3; /* Cinza claro */ /* Cor do timer */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.notas .anote-anotacoes {
+    font-size: 14px;
+    color: #777; /* Cinza escuro */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #EEE7DA; /* Cor do rodapé */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #777; /* Cinza escuro */
+}
+
+/* To-do List sem cor de fundo */
+.section.quadro:first-child { /* Seleciona o primeiro quadro */
+    background-color: #F2F1EB; /* Cor do fundo da página */
+}
+
+/* Ajustando a largura dos quadrados */
+.section.quadro {
+    width: 300px; /* Largura do timer */
+}
+
+.section-row {
+    justify-content: space-around; /* Ajustando o espaçamento */
+}
+
+/* Quadrados "Happy Day" e "Calendário" maiores */
+.section.quadro.grande {
+    width: 450px; /* Ajuste a largura conforme necessário */
+}
+
+/* Definindo a mesma cor de fundo para "Happy Day" e "Calendário" */
+.section.quadro.grande.happy-day, 
+.section.quadro.grande.calendario {
+    background-color: #D8EFD3; /* Cinza claro */ /* Cor do timer */
+}
+
+/* Alinhando verticalmente o conteúdo dentro do "Happy Day" */
+.section.quadro.grande.happy-day .happy-day-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Estilos para o calendário */
+#calendario-container {
+    /* Estilos para o container do calendário */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff; /* Branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendario-container table {
+    border-collapse: collapse;
+}
+
+#calendario-container th, 
+#calendario-container td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borda cinza claro */
+}
+
+#calendario-container th {
+    background-color: #eee; /* Cinza claro */
+}
+
+
+#calendario-container .dia-hoje {
+    background-color: #228B22; /* Verde escuro */
+    color: #fff; /* Branco */
+}
+
+#calendario-container .dia-outro-mes {
+    color: #aaa; /* Cinza claro */
+}
+
+/* Estilo para a lista do Happy Day */
+.happy-day-list {
+    list-style-type: disc; /* Define o tipo de marcador como disco */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda da lista */
+    margin-top: 10px; /* Adiciona margem superior */
+}
+
+.happy-day-list li {
+    margin-bottom: 5px; /* Adiciona margem inferior aos itens */
+}
+
+/* Estilos para a seção do calendário */
+.section.quadro.grande.calendario {
+    background-color: #D8EFD3; /* Cinza claro */ /* Cor do timer */
+}
+
+/* Ajustando a altura do Timer */
+.section.quadro.timer-quadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content; /* Ajusta a altura do timer */
+}
+
+/* Estilos para o input de edição */
+.edit-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+}
