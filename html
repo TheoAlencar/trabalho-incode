@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProduciFy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="lampada.png" alt="Ícone de lâmpada">
+                <h1>ProduciFy</h1>
+            </div>
+            <div class="modo-noturno">
+                <div class="circle"></div>
+                <p>Modo Noturno</p>
+            </div>
+        </div>
+        <div class="section-row">  <!-- Nova div para agrupar as seções -->
+            <div class="section quadro">  <!-- Adicionando a classe "quadro" -->
+                <h2 class="section-title">To-do List</h2>
+                <div class="to-do-list-quadro">  <!-- Quadro da To-do List -->
+                    <h3>Adicione suas tarefas:</h3>
+                    <ul class="to-do-list-items">
+                        <li>
+                            <span class="list-item">Exemplo de tarefa</span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item">Exemplo de tarefa</span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item">Exemplo de tarefa</span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item">Exemplo de tarefa</span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item">Exemplo de tarefa</span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section quadro">  <!-- Adicionando a classe "quadro" -->
+                <h2 class="section-title">Lembretes</h2>
+                <div class="lembretes-quadro">  <!-- Quadro dos Lembretes -->
+                    <p class="anote-lembretes">Anote seus lembretes aqui:</p>
+                    <ul class="lembretes-items">
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section quadro timer-quadro">  <!-- Adicionando a classe "quadro" -->
+                <div class="timer">
+                    <img src="cronometro.png" alt="Ícone de cronômetro">
+                    <p class="time">30:00</p>
+                    <button class="start">start</button>
+                    <button class="pause" style="display: none;">pause</button>
+                    <button class="reset" style="display: none;">reset</button>
+                </div>
+            </div>
+        </div>  <!-- Fim da div section-row -->
+
+        <div class="section-row">  <!-- Nova div para agrupar as seções -->
+            <div class="section quadro grande happy-day">  <!-- Adicionando a classe "grande" -->
+                <h2 class="section-title">Happy day</h2>
+                <div class="lembretes-quadro happy-day-items">  <!-- Quadro do Happy Day -->
+                    <p class="adicionar-coisas">Adicione coisas boas que aconteceram no seu dia:</p>
+                    <ul class="happy-day-list">
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                        <li>
+                            <span class="list-item"></span>
+                            <input type="text" class="edit-input" style="display: none;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section quadro grande calendario">  <!-- Adicionando a classe "grande" -->
+                <h2 class="section-title">Calendário</h2>
+                <div id="calendario-container">  <!-- Container para o calendário -->
+                </div>
+            </div>
+        </div>  <!-- Fim da div section-row -->
+
+        <div class="notas">
+            <h2 class="section-title">Notas</h2>
+            <p class="anote-anotacoes">Anote suas anotações aqui:</p>
+        </div>
+
+        <div class="footer">
+            <p>ProduciFy founders</p>
+            <p>Ana Vitória Maciel, Enzo Frazão, Enzo Gauchi, Theo Alencar.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
